@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3B17608199ECFF500A0B21F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B17607199ECFF500A0B21F /* main.m */; };
+		C3B1760B199ECFF500A0B21F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B1760A199ECFF500A0B21F /* AppDelegate.m */; };
+		C3B1760D199ECFF500A0B21F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3B1760C199ECFF500A0B21F /* Images.xcassets */; };
+		C3B17619199ECFF500A0B21F /* PicQuizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B17618199ECFF500A0B21F /* PicQuizTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3B17613199ECFF500A0B21F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3B175FA199ECFF500A0B21F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3B17601199ECFF500A0B21F;
+			remoteInfo = PicQuiz;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C3B17602199ECFF500A0B21F /* PicQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3B17606199ECFF500A0B21F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3B17607199ECFF500A0B21F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C3B17609199ECFF500A0B21F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C3B1760A199ECFF500A0B21F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C3B1760C199ECFF500A0B21F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C3B17612199ECFF500A0B21F /* PicQuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PicQuizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3B17617199ECFF500A0B21F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3B17618199ECFF500A0B21F /* PicQuizTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PicQuizTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3B175FF199ECFF500A0B21F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3B1760F199ECFF500A0B21F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3B175F9199ECFF500A0B21F = {
+			isa = PBXGroup;
+			children = (
+				C3B17604199ECFF500A0B21F /* PicQuiz */,
+				C3B17615199ECFF500A0B21F /* PicQuizTests */,
+				C3B17603199ECFF500A0B21F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3B17603199ECFF500A0B21F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3B17602199ECFF500A0B21F /* PicQuiz.app */,
+				C3B17612199ECFF500A0B21F /* PicQuizTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3B17604199ECFF500A0B21F /* PicQuiz */ = {
+			isa = PBXGroup;
+			children = (
+				C3B17609199ECFF500A0B21F /* AppDelegate.h */,
+				C3B1760A199ECFF500A0B21F /* AppDelegate.m */,
+				C3B1760C199ECFF500A0B21F /* Images.xcassets */,
+				C3B17605199ECFF500A0B21F /* Supporting Files */,
+			);
+			path = PicQuiz;
+			sourceTree = "<group>";
+		};
+		C3B17605199ECFF500A0B21F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3B17606199ECFF500A0B21F /* Info.plist */,
+				C3B17607199ECFF500A0B21F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3B17615199ECFF500A0B21F /* PicQuizTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3B17618199ECFF500A0B21F /* PicQuizTests.m */,
+				C3B17616199ECFF500A0B21F /* Supporting Files */,
+			);
+			path = PicQuizTests;
+			sourceTree = "<group>";
+		};
+		C3B17616199ECFF500A0B21F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3B17617199ECFF500A0B21F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3B17601199ECFF500A0B21F /* PicQuiz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3B1761C199ECFF500A0B21F /* Build configuration list for PBXNativeTarget "PicQuiz" */;
+			buildPhases = (
+				C3B175FE199ECFF500A0B21F /* Sources */,
+				C3B175FF199ECFF500A0B21F /* Frameworks */,
+				C3B17600199ECFF500A0B21F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PicQuiz;
+			productName = PicQuiz;
+			productReference = C3B17602199ECFF500A0B21F /* PicQuiz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3B17611199ECFF500A0B21F /* PicQuizTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3B1761F199ECFF500A0B21F /* Build configuration list for PBXNativeTarget "PicQuizTests" */;
+			buildPhases = (
+				C3B1760E199ECFF500A0B21F /* Sources */,
+				C3B1760F199ECFF500A0B21F /* Frameworks */,
+				C3B17610199ECFF500A0B21F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3B17614199ECFF500A0B21F /* PBXTargetDependency */,
+			);
+			name = PicQuizTests;
+			productName = PicQuizTests;
+			productReference = C3B17612199ECFF500A0B21F /* PicQuizTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3B175FA199ECFF500A0B21F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = CZLabs;
+				TargetAttributes = {
+					C3B17601199ECFF500A0B21F = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					C3B17611199ECFF500A0B21F = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = C3B17601199ECFF500A0B21F;
+					};
+				};
+			};
+			buildConfigurationList = C3B175FD199ECFF500A0B21F /* Build configuration list for PBXProject "PicQuiz" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C3B175F9199ECFF500A0B21F;
+			productRefGroup = C3B17603199ECFF500A0B21F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3B17601199ECFF500A0B21F /* PicQuiz */,
+				C3B17611199ECFF500A0B21F /* PicQuizTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3B17600199ECFF500A0B21F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3B1760D199ECFF500A0B21F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3B17610199ECFF500A0B21F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3B175FE199ECFF500A0B21F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3B1760B199ECFF500A0B21F /* AppDelegate.m in Sources */,
+				C3B17608199ECFF500A0B21F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3B1760E199ECFF500A0B21F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3B17619199ECFF500A0B21F /* PicQuizTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3B17614199ECFF500A0B21F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3B17601199ECFF500A0B21F /* PicQuiz */;
+			targetProxy = C3B17613199ECFF500A0B21F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C3B1761A199ECFF500A0B21F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C3B1761B199ECFF500A0B21F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3B1761D199ECFF500A0B21F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = PicQuiz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C3B1761E199ECFF500A0B21F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = PicQuiz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C3B17620199ECFF500A0B21F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PicQuiz.app/PicQuiz";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PicQuizTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		C3B17621199ECFF500A0B21F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PicQuiz.app/PicQuiz";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PicQuizTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3B175FD199ECFF500A0B21F /* Build configuration list for PBXProject "PicQuiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3B1761A199ECFF500A0B21F /* Debug */,
+				C3B1761B199ECFF500A0B21F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3B1761C199ECFF500A0B21F /* Build configuration list for PBXNativeTarget "PicQuiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3B1761D199ECFF500A0B21F /* Debug */,
+				C3B1761E199ECFF500A0B21F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C3B1761F199ECFF500A0B21F /* Build configuration list for PBXNativeTarget "PicQuizTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3B17620199ECFF500A0B21F /* Debug */,
+				C3B17621199ECFF500A0B21F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3B175FA199ECFF500A0B21F /* Project object */;
+}
