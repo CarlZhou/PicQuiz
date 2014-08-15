@@ -11,6 +11,8 @@
 		C3B1760B199ECFF500A0B21F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B1760A199ECFF500A0B21F /* AppDelegate.m */; };
 		C3B1760D199ECFF500A0B21F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3B1760C199ECFF500A0B21F /* Images.xcassets */; };
 		C3B17619199ECFF500A0B21F /* PicQuizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B17618199ECFF500A0B21F /* PicQuizTests.m */; };
+		C3B17629199ED08E00A0B21F /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B17627199ED08E00A0B21F /* GameViewController.m */; };
+		C3B1762A199ED08E00A0B21F /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B17628199ED08E00A0B21F /* GameViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,9 @@
 		C3B17612199ECFF500A0B21F /* PicQuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PicQuizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B17617199ECFF500A0B21F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3B17618199ECFF500A0B21F /* PicQuizTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PicQuizTests.m; sourceTree = "<group>"; };
+		C3B17626199ED08E00A0B21F /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		C3B17627199ED08E00A0B21F /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		C3B17628199ED08E00A0B21F /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +79,7 @@
 		C3B17604199ECFF500A0B21F /* PicQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				C3B17624199ED08E00A0B21F /* classes */,
 				C3B17609199ECFF500A0B21F /* AppDelegate.h */,
 				C3B1760A199ECFF500A0B21F /* AppDelegate.m */,
 				C3B1760C199ECFF500A0B21F /* Images.xcassets */,
@@ -106,6 +112,32 @@
 				C3B17617199ECFF500A0B21F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3B17624199ED08E00A0B21F /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				C3B1762B199ED26900A0B21F /* model */,
+				C3B17625199ED08E00A0B21F /* controllers */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		C3B17625199ED08E00A0B21F /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C3B17626199ED08E00A0B21F /* GameViewController.h */,
+				C3B17627199ED08E00A0B21F /* GameViewController.m */,
+				C3B17628199ED08E00A0B21F /* GameViewController.xib */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		C3B1762B199ED26900A0B21F /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3B1760D199ECFF500A0B21F /* Images.xcassets in Resources */,
+				C3B1762A199ED08E00A0B21F /* GameViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +240,7 @@
 			files = (
 				C3B1760B199ECFF500A0B21F /* AppDelegate.m in Sources */,
 				C3B17608199ECFF500A0B21F /* main.m in Sources */,
+				C3B17629199ED08E00A0B21F /* GameViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
