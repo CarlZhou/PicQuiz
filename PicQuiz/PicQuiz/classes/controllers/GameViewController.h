@@ -2,16 +2,18 @@
 //  iSpyGameViewController.h
 //  PhotoSmart
 //
-//  Created by Carl Zhou on 2014-08-14.
-//  Copyright (c) 2014 Majid Veyseh. All rights reserved.
+//  Created by Zian Zhou on 2014-08-15.
+//  Copyright (c) 2014 Zian Zhou. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import "GPUImage.h"
+
 
 @interface GameViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UILabel *gameTitleLabel;
-@property (strong, nonatomic) IBOutlet UIImageView *gameImageView;
+@property (strong, nonatomic) IBOutlet GPUImageView *gameImageView;
 @property (strong, nonatomic) IBOutlet UIView *lettersViewContainer;
 @property (strong, nonatomic) IBOutlet UIView *answerViewContainer;
 @property (strong, nonatomic) UICollectionView *collectionView;

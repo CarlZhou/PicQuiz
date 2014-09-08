@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76F0C2C802504EAAA2174182 /* libPods-PicQuiz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 004E77D43420400E9AF8C949 /* libPods-PicQuiz.a */; };
 		C3B17608199ECFF500A0B21F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B17607199ECFF500A0B21F /* main.m */; };
 		C3B1760B199ECFF500A0B21F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B1760A199ECFF500A0B21F /* AppDelegate.m */; };
 		C3B1760D199ECFF500A0B21F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3B1760C199ECFF500A0B21F /* Images.xcassets */; };
 		C3B17619199ECFF500A0B21F /* PicQuizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B17618199ECFF500A0B21F /* PicQuizTests.m */; };
 		C3B17629199ED08E00A0B21F /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B17627199ED08E00A0B21F /* GameViewController.m */; };
 		C3B1762A199ED08E00A0B21F /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3B17628199ED08E00A0B21F /* GameViewController.xib */; };
+		C3B1762F199ED38500A0B21F /* burger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3B1762E199ED38500A0B21F /* burger.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		004E77D43420400E9AF8C949 /* libPods-PicQuiz.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PicQuiz.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93FC5EAAC638407597768ECD /* Pods-PicQuiz.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicQuiz.xcconfig"; path = "Pods/Pods-PicQuiz.xcconfig"; sourceTree = "<group>"; };
 		C3B17602199ECFF500A0B21F /* PicQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B17606199ECFF500A0B21F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3B17607199ECFF500A0B21F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -38,6 +42,7 @@
 		C3B17626199ED08E00A0B21F /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		C3B17627199ED08E00A0B21F /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		C3B17628199ED08E00A0B21F /* GameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
+		C3B1762E199ED38500A0B21F /* burger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = burger.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76F0C2C802504EAAA2174182 /* libPods-PicQuiz.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,12 +64,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AB836EC921244F69BA527EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				004E77D43420400E9AF8C949 /* libPods-PicQuiz.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C3B175F9199ECFF500A0B21F = {
 			isa = PBXGroup;
 			children = (
 				C3B17604199ECFF500A0B21F /* PicQuiz */,
 				C3B17615199ECFF500A0B21F /* PicQuizTests */,
 				C3B17603199ECFF500A0B21F /* Products */,
+				93FC5EAAC638407597768ECD /* Pods-PicQuiz.xcconfig */,
+				1AB836EC921244F69BA527EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +95,7 @@
 		C3B17604199ECFF500A0B21F /* PicQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				C3B1762C199ED34200A0B21F /* images */,
 				C3B17624199ED08E00A0B21F /* classes */,
 				C3B17609199ECFF500A0B21F /* AppDelegate.h */,
 				C3B1760A199ECFF500A0B21F /* AppDelegate.m */,
@@ -140,6 +157,22 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		C3B1762C199ED34200A0B21F /* images */ = {
+			isa = PBXGroup;
+			children = (
+				C3B1762D199ED34200A0B21F /* test */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		C3B1762D199ED34200A0B21F /* test */ = {
+			isa = PBXGroup;
+			children = (
+				C3B1762E199ED38500A0B21F /* burger.jpg */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +180,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3B1761C199ECFF500A0B21F /* Build configuration list for PBXNativeTarget "PicQuiz" */;
 			buildPhases = (
+				3D30CD4CA35D4D6C8B550892 /* Check Pods Manifest.lock */,
 				C3B175FE199ECFF500A0B21F /* Sources */,
 				C3B175FF199ECFF500A0B21F /* Frameworks */,
 				C3B17600199ECFF500A0B21F /* Resources */,
+				5E8A120219734FAC96797C8E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3B1760D199ECFF500A0B21F /* Images.xcassets in Resources */,
+				C3B1762F199ED38500A0B21F /* burger.jpg in Resources */,
 				C3B1762A199ED08E00A0B21F /* GameViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,6 +268,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D30CD4CA35D4D6C8B550892 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5E8A120219734FAC96797C8E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-PicQuiz-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C3B175FE199ECFF500A0B21F /* Sources */ = {
@@ -341,6 +410,7 @@
 		};
 		C3B1761D199ECFF500A0B21F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93FC5EAAC638407597768ECD /* Pods-PicQuiz.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -353,6 +423,7 @@
 		};
 		C3B1761E199ECFF500A0B21F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93FC5EAAC638407597768ECD /* Pods-PicQuiz.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -418,6 +489,7 @@
 				C3B1761E199ECFF500A0B21F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3B1761F199ECFF500A0B21F /* Build configuration list for PBXNativeTarget "PicQuizTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +498,7 @@
 				C3B17621199ECFF500A0B21F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

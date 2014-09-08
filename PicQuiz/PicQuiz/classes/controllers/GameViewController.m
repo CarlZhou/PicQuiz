@@ -2,8 +2,8 @@
 //  iSpyGameViewController.m
 //  PhotoSmart
 //
-//  Created by Carl Zhou on 2014-08-14.
-//  Copyright (c) 2014 Majid Veyseh. All rights reserved.
+//  Created by Zian Zhou on 2014-08-15.
+//  Copyright (c) 2014 Zian Zhou. All rights reserved.
 //
 
 #import "GameViewController.h"
@@ -12,6 +12,8 @@
 @interface GameViewController ()<UICollectionViewDataSource, UICollectionViewDelegate>
 {
     NSString *answer;
+    float filterValue;
+    NSTimer *timer;
 }
 
 @property (nonatomic, strong) NSMutableArray *lettersData;
@@ -19,9 +21,17 @@
 @property (nonatomic, strong) NSMutableArray *selectedIndexPaths;
 @property (nonatomic, strong) NSMutableArray *answerArray;
 
+@property (nonatomic, strong) GPUImageOutput<GPUImageInput> *filter;
+@property (nonatomic, strong) GPUImagePicture *sourcePicture;
+
 @end
 
 @implementation GameViewController
+
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
 
 - (void)viewDidLoad
 {
@@ -35,8 +45,40 @@
 //        answer = self.gameObject.gameAnswer;
 //    }
     
+    answer = @"Burger";
+    
+    UIImage *inputImage = [UIImage imageNamed:@"burger.jpg"]; // The WID.jpg example is greater than 2048 pixels tall, so it fails on older devices
+    
+    self.sourcePicture = [[GPUImagePicture alloc] initWithImage:inputImage smoothlyScaleOutput:YES];
+    self.filter = [[GPUImagePolkaDotFilter alloc] init];
+    filterValue = 0.1;
+    [(GPUImagePolkaDotFilter *)self.filter setFractionalWidthOfAPixel:filterValue];
+    
+    [self.sourcePicture addTarget:self.filter];
+    [self.filter addTarget:self.gameImageView];
+    
+    [self.sourcePicture processImage];
+    
     [self setupLettersCollectionView];
     [self initData];
+    
+//    [self setFilter];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    timer = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(setFilter) userInfo:nil repeats:YES];
+}
+
+- (void)setFilter
+{
+    filterValue = filterValue - 0.00005;
+    [(GPUImagePolkaDotFilter *)self.filter setFractionalWidthOfAPixel:filterValue];
+    [self.sourcePicture processImage];
+    if (filterValue <= 0)
+    {
+        [timer invalidate];
+    }
 }
 
 - (void)initData
